@@ -13,8 +13,8 @@ Bot = Client(
    
 START_TEXT = """
 Hai {},
-Am Sticker id Finder Bot. 
-I can Find I'd of an sticker. Just send me a sticker I would reply with its I'd. 
+Am Sticker id Finder Bot
+I can Find I'd of an sticker. Just send me a sticker and reply it with /StickerId command i would provide its I'd. . 
 """
     
 @Bot.on_message(filters.private & filters.command(["start"]))
@@ -31,8 +31,11 @@ START_BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-@Bot.on_message(filters.private & filters.sticker)
-async def stickers(_, message):
-       await message.reply(f"Your Requested Sticker's ID is   * `{message.sticker.file_id}` *", quote=True)
+@Bot.on_message(filters.private & filters.command(["stickerid"]))
+async def stickers(bot, message):
+    if message.reply_to_message.sticker:
+       await message.reply(f"Your Requested Sticker's ID is   * `{message.reply_to_message.sticker.file_id}` *", quote=True)
+    else: 
+       await message.reply("Oops !! Not a sticker file")
    
 Bot.run()
