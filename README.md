@@ -22,7 +22,7 @@ THIS REPOSITORY  HAVE TWO BRANCHES FOR DEPLOY WITH COMMAND & WITHOUT COMMAND.
 
 ##### Deploy - without Command
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MR-JINN-OF-TG/Stickerid/tree/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hoihoi07/Stickerid/tree/main)
 
 ##### Deploy - with Command
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MR-JINN-OF-TG/stickerid/tree/Command)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hoihoi07/stickerid/tree/Command)
